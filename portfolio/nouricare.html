@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nouricare | Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  function openImage(img) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modalImg.src = img.src;
+    modal.classList.add("active");
+  }
+
+  function closeImage() {
+    document.getElementById("imageModal").classList.remove("active");
+  }
+</script>
+
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Portfolio</h1>
+</header>
+
+<section class="page project-detail">
+    
+  <a href="projects.html" class="back-link">← Back to Projects</a>
+
+  <h2>Nouricare</h2>
+  <p class="project-desc">
+    Nouricare is a fully functional academic e-commerce system for beauty
+    and hygiene products, featuring product browsing, checkout, and
+    user interaction.
+  </p>
+
+  <div class="screenshots-grid">
+  <img src="assets/nouricare-1.png" onclick="openImage(this)">
+  <img src="assets/nouricare-2.png" onclick="openImage(this)">
+  <img src="assets/nouricare-3.png" onclick="openImage(this)">
+  <img src="assets/nouricare-4.png" onclick="openImage(this)">
+  <img src="assets/nouricare-5.png" onclick="openImage(this)">
+  <img src="assets/nouricare-6.png" onclick="openImage(this)">
+  <img src="assets/nouricare-7.png" onclick="openImage(this)">
+  <img src="assets/nouricare-8.png" onclick="openImage(this)">
+</div>
+
+  <!-- Image Modal -->
+<div class="image-modal" id="imageModal">
+  <span class="close-modal" onclick="closeImage()">×</span>
+  <img id="modalImage" src="" alt="Expanded view">
+</div>
+</section>
+
+</body>
+</html>

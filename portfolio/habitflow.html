@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HabitFlow | Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  function openImage(img) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modalImg.src = img.src;
+    modal.classList.add("active");
+  }
+
+  function closeImage() {
+    document.getElementById("imageModal").classList.remove("active");
+  }
+</script>
+
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Portfolio</h1>
+</header>
+
+<section class="page project-detail">
+    
+  <a href="projects.html" class="back-link">← Back to Projects</a>
+
+  <h2>HabitFlow</h2>
+  <p class="project-desc">
+    HabitFlow is a mobile app that helps users build and maintain daily habits through a simple, high-visibility interface. It offers a dynamic dashboard with color-coded habit cards, a custom habit builder, and reminders to support consistency. The app’s vibrant green, card-based design emphasizes clarity and makes habit tracking engaging and easy.
+  </p>
+
+  <div class="screenshots-grid">
+  <img src="assets/habit-1.PNG" onclick="openImage(this)">
+  <img src="assets/habit-2.PNG" onclick="openImage(this)">
+</div>
+
+  <!-- Image Modal -->
+<div class="image-modal" id="imageModal">
+  <span class="close-modal" onclick="closeImage()">×</span>
+  <img id="modalImage" src="" alt="Expanded view">
+</div>
+</section>
+
+</body>
+</html>

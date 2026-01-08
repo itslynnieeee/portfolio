@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Recipe | Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  function openImage(img) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modalImg.src = img.src;
+    modal.classList.add("active");
+  }
+
+  function closeImage() {
+    document.getElementById("imageModal").classList.remove("active");
+  }
+</script>
+
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Portfolio</h1>
+</header>
+
+<section class="page project-detail">
+    
+  <a href="projects.html" class="back-link">← Back to Projects</a>
+
+  <h2>Online Recipe</h2>
+  <p class="project-desc">
+    Online Recipe is a clean, minimalist mobile app that simplifies home cooking by offering a curated database of recipes, meal-planning tools, and a favorites system for easy access. Its interface emphasizes high-quality food photography, effortless navigation, and a calm, readable design, while features like recipe details, ingredient lists, and a built-in shopping list help users plan and prepare meals efficiently.
+  </p>
+
+  <div class="screenshots-grid">
+  <img src="assets/rec-2.PNG" onclick="openImage(this)">
+  <img src="assets/rec-3.PNG" onclick="openImage(this)">
+  <img src="assets/rec-4.PNG" onclick="openImage(this)">
+  <img src="assets/rec-5.PNG" onclick="openImage(this)">
+</div>
+
+  <!-- Image Modal -->
+<div class="image-modal" id="imageModal">
+  <span class="close-modal" onclick="closeImage()">×</span>
+  <img id="modalImage" src="" alt="Expanded view">
+</div>
+</section>
+
+</body>
+</html>

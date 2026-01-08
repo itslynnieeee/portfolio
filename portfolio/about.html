@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Chrislynne Urriza</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Portfolio</h1>
+
+  <div class="menu-btn" onclick="openMenu()">☰</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Mobile Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="closeMenu()">×</div>
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<section class="page about-page">
+  <h2>About Me</h2>
+
+  <div class="about-grid">
+    <!-- Profile Picture -->
+    <div class="about-image">
+      <img src="assets/profile.jpg" alt="Chrislynne Urriza">
+    </div>
+
+    <!-- Text + Highlights -->
+    <div class="about-text">
+      <p>
+        I am an IT Intern from Brgy. Silangan Lazaan, Nagcarlan, Laguna, eager to learn and assist with technology tasks. I focus on basic troubleshooting, device setups, web and mobile app development, and supporting everyday IT needs, always willing to grow and collaborate with a team.
+      </p>
+
+      <p>
+        My experience includes building web and mobile apps using <strong>Flask</strong>, creating <strong>HTML & CSS</strong> layouts, and designing simple user interfaces with <strong>Figma</strong>. I have also applied basic UX principles and used <strong>Bootstrap</strong> templates to enhance project websites.
+      </p>
+
+      <!-- Highlight Cards -->
+      <div class="about-cards">
+        <div class="card">💻 Web & Mobile Development</div>
+        <div class="card">🎨 UI & Figma Design</div>
+        <div class="card">🛠️ Basic Networking & IT Support</div>
+      </div>
+
+      <p>
+        I have built web and mobile projects for class assignments, collaborated in teams using version control, and gained hands-on networking experience through NC II Computer Systems Servicing training. Through my OJT, I aim to further develop my technical skills and contribute meaningfully to the organization.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function openMenu() {
+    document.getElementById("sidebar").style.right = "0";
+    document.getElementById("overlay").style.opacity = "1";
+    document.getElementById("overlay").style.visibility = "visible";
+  }
+
+  function closeMenu() {
+    document.getElementById("sidebar").style.right = "-260px";
+    document.getElementById("overlay").style.opacity = "0";
+    document.getElementById("overlay").style.visibility = "hidden";
+  }
+</script>
+
+</body>
+</html>

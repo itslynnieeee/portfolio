@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Booking | Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  function openImage(img) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modalImg.src = img.src;
+    modal.classList.add("active");
+  }
+
+  function closeImage() {
+    document.getElementById("imageModal").classList.remove("active");
+  }
+</script>
+
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Portfolio</h1>
+</header>
+
+<section class="page project-detail">
+    
+  <a href="projects.html" class="back-link">← Back to Projects</a>
+
+  <h2>Freelance Booking</h2>
+  <p class="project-desc">
+    The Freelance Booking App Design is a UI/UX project that focuses on the user journey of discovering, scheduling, and managing freelance services through a high-contrast, accessible, and sophisticated interface. It features a streamlined onboarding and authentication flow, a dynamic dashboard for tracking bookings, categorized service discovery with ratings, an interactive booking system with instant confirmations, and comprehensive profile management. The modern Gold and White design palette reinforces a premium, concierge-style experience while keeping the interface clean and functional.
+  </p>
+
+  <div class="screenshots-grid">
+  <img src="assets/freelance-1.PNG" onclick="openImage(this)">
+  <img src="assets/freelance-2.PNG" onclick="openImage(this)">
+  <img src="assets/freelance-3.PNG" onclick="openImage(this)">
+</div>
+
+  <!-- Image Modal -->
+<div class="image-modal" id="imageModal">
+  <span class="close-modal" onclick="closeImage()">×</span>
+  <img id="modalImage" src="" alt="Expanded view">
+</div>
+</section>
+
+</body>
+</html>

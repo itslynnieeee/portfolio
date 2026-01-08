@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Chrislynne Urriza</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Portfolio</h1>
+
+  <div class="menu-btn" onclick="openMenu()">☰</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html" class="active">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Mobile Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="closeMenu()">×</div>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html" class="active">Skills</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<section class="page skills-page">
+  <h2>My Skills</h2>
+
+  <div class="skills-grid">
+    <!-- Skill Cards -->
+    <div class="skill-card">
+      <h3>🎨 UI Design</h3>
+      <p>Simple UI designs using Figma</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>💻 Web Development</h3>
+      <p>Basic HTML & CSS</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>⚡ Backend</h3>
+      <p>Beginner Flask development</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>📐 UX Design</h3>
+      <p>Basic UX understanding</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>🌐 Networking</h3>
+      <p>Basic networking (NC II CSS background)</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function openMenu() {
+    document.getElementById("sidebar").style.right = "0";
+    document.getElementById("overlay").style.opacity = "1";
+    document.getElementById("overlay").style.visibility = "visible";
+  }
+
+  function closeMenu() {
+    document.getElementById("sidebar").style.right = "-260px";
+    document.getElementById("overlay").style.opacity = "0";
+    document.getElementById("overlay").style.visibility = "hidden";
+  }
+</script>
+
+</body>
+</html>
