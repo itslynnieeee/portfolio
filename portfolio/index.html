@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chrislynne Urriza | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">Portfolio</a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-links">
+
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <button class="menu-btn" onclick="openMenu()" aria-label="Open menu">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- =========================
+     MOBILE SIDEBAR
+========================= -->
+
+<div class="sidebar" id="sidebar">
+
+    <button class="close-btn" onclick="closeMenu()" aria-label="Close menu">
+        ×
+    </button>
+
+    <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#skills" onclick="closeMenu()">Skills</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+
+</div>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section id="home" class="hero hero-grid">
+
+    <div class="hero-text">
+
+        <p class="small-label">Hello, I'm</p>
+
+        <h1>Chrislynne Urriza</h1>
+
+        <p class="role">
+            IT Graduate • Web Developer
+        </p>
+
+        <p class="intro">
+            An IT graduate interested in building web applications,
+            creating clean interfaces, and developing user-focused
+            digital solutions.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects" class="btn primary">
+                View Projects
+            </a>
+
+            <a href="assets/Chrislynne_Urriza_Resume_Developer.pdf"
+               class="btn outline"
+               target="_blank">
+                Download Resume
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="assets/profile.jpg"
+            alt="Chrislynne Urriza"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="section about-section">
+
+    <div class="section-title">
+
+        <p class="section-label">Get to know me</p>
+
+        <h2>About Me</h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-image">
+
+            <img
+                src="assets/profile.jpg"
+                alt="Chrislynne Urriza"
+            >
+
+        </div>
+
+
+        <div class="about-text">
+
+            <p>
+                I am an Information Technology graduate with an interest
+                in web development, UI design, and practical technology
+                solutions. I enjoy turning ideas into clean and
+                user-friendly interfaces while continuously improving
+                my technical skills.
+            </p>
+
+            <p>
+                My experience includes developing web applications using
+                <strong>HTML, CSS, JavaScript, PHP, MySQL, and Flask</strong>,
+                as well as creating interface designs using
+                <strong>Figma</strong>.
+            </p>
+
+            <p>
+                During my internship, I gained hands-on experience working
+                with a web-based administrative system, including forms,
+                database-driven features, workflows, notifications, and
+                administrative functions.
+            </p>
+
+
+            <div class="about-tags">
+
+                <span>Web Development</span>
+                <span>UI Design</span>
+                <span>Database</span>
+                <span>IT Support</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects" class="section projects-section">
+
+    <div class="section-title">
+
+        <p class="section-label">What I've worked on</p>
+
+        <h2>Projects</h2>
+
+    </div>
+
+
+    <!-- =========================
+     UPLB FEATURED PROJECT
+========================= -->
+
+<div class="featured-project uplb-featured">
+
+    <div class="featured-content">
+
+        <span class="project-label">WEB DEVELOPER INTERN</span>
+
+        <h3>UPLB Graduate School E-Forms System</h3>
+
+        <p class="project-date">
+            University of the Philippines Los Baños · February 2026 – May 2026
+        </p>
+
+        <p class="project-description">
+            Worked on a web-based administration system supporting
+            university workflows. My contributions included system
+            development, feature enhancements, testing, bug fixing,
+            troubleshooting, documentation, and user-requested improvements.
+        </p>
+
+        <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+        </div>
+
+    </div>
+
+
+    <!-- UPLB PROJECT VIEWER -->
+
+    <div class="uplb-viewer">
+
+        <div class="uplb-viewer-header">
+
+            <span id="uplbCounter">01 / 07</span>
+
+            <span id="uplbCategory">
+                PubMat Generator
+            </span>
+
+        </div>
+
+
+        <div class="uplb-image-container">
+
+    <img
+        id="uplbImage"
+        src="images/uplb/pubmat-generator-1.png"
+        alt="UPLB Graduate School project screenshot"
+        onclick="openUplbImageViewer()"
+        style="cursor: pointer;"
+    >
+
+</div>
+
+        <div class="uplb-info">
+
+            <h4 id="uplbTitle">
+                PubMat Generator
+            </h4>
+
+            <p id="uplbDescription">
+                Developed and enhanced a web-based PubMat generation
+                feature for creating examination-related promotional
+                materials.
+            </p>
+
+        </div>
+
+
+        <div class="uplb-navigation">
+
+            <button
+                type="button"
+                id="uplbPrevious"
+                onclick="previousUplbProject()"
+            >
+                ← PREVIOUS
+            </button>
+
+            <span id="uplbProgress">
+                01 / 07
+            </span>
+
+            <button
+                type="button"
+                id="uplbNext"
+                onclick="nextUplbProject()"
+            >
+                NEXT →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- =========================
+         OTHER PROJECTS
+    ========================= -->
+
+    <div class="other-projects-title">
+
+        <h3>Other Projects</h3>
+
+        <p>
+            Academic projects and UI/UX design concepts.
+        </p>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+        <!-- Nouricare -->
+
+        <div class="project-card">
+
+            <img
+                src="assets/nouricare.jpg"
+                alt="Nouricare project"
+            >
+
+            <div class="project-info">
+
+                <span class="project-type">
+                    Web Development
+                </span>
+
+                <h3>Nouricare</h3>
+
+                <p>
+                    A beauty and hygiene e-commerce system featuring
+                    product browsing, checkout, and user interaction.
+                </p>
+
+                <button
+                    class="btn outline"
+                    onclick="openProjectModal('nouricare')"
+                >
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Freelance Booking -->
+
+        <div class="project-card">
+
+            <img
+                src="assets/free.PNG"
+                alt="Freelance Booking App"
+            >
+
+            <div class="project-info">
+
+                <span class="project-type">
+                    UI/UX Design
+                </span>
+
+                <h3>Freelance Booking App</h3>
+
+                <p>
+                    A mobile app concept focused on discovering,
+                    scheduling, and managing freelance services.
+                </p>
+
+                <button
+                    class="btn outline"
+                    onclick="openProjectModal('freelance')"
+                >
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SnackStop -->
+
+        <div class="project-card">
+
+            <img
+                src="assets/snack.PNG"
+                alt="SnackStop project"
+            >
+
+            <div class="project-info">
+
+                <span class="project-type">
+                    UI/UX Design
+                </span>
+
+                <h3>SnackStop</h3>
+
+                <p>
+                    A food delivery app concept designed around
+                    local snacks, promotions, and convenient checkout.
+                </p>
+
+                <button
+                    class="btn outline"
+                    onclick="openProjectModal('snackstop')"
+                >
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- HabitFlow -->
+
+        <div class="project-card">
+
+            <img
+                src="assets/habit.PNG"
+                alt="HabitFlow project"
+            >
+
+            <div class="project-info">
+
+                <span class="project-type">
+                    UI/UX Design
+                </span>
+
+                <h3>HabitFlow</h3>
+
+                <p>
+                    A mobile app concept for building and maintaining
+                    positive daily habits.
+                </p>
+
+                <button
+                    class="btn outline"
+                    onclick="openProjectModal('habitflow')"
+                >
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BizTrack -->
+
+        <div class="project-card">
+
+            <img
+                src="assets/biz-1.PNG"
+                alt="BizTrack project"
+            >
+
+            <div class="project-info">
+
+                <span class="project-type">
+                    UI/UX Design
+                </span>
+
+                <h3>BizTrack</h3>
+
+                <p>
+                    A dashboard concept designed to help small
+                    businesses manage operations and performance.
+                </p>
+
+                <button
+                    class="btn outline"
+                    onclick="openProjectModal('biztrack')"
+                >
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Online Recipe -->
+
+        <div class="project-card">
+
+            <img
+                src="assets/recipe-1.PNG"
+                alt="Online Recipe project"
+            >
+
+            <div class="project-info">
+
+                <span class="project-type">
+                    UI/UX Design
+                </span>
+
+                <h3>Online Recipe</h3>
+
+                <p>
+                    A mobile recipe app concept focused on simple
+                    navigation, meal planning, and recipe discovery.
+                </p>
+
+                <button
+                    class="btn outline"
+                    onclick="openProjectModal('recipe')"
+                >
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills" class="section skills-section">
+
+    <div class="section-title">
+
+        <p class="section-label">What I work with</p>
+
+        <h2>Skills</h2>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+        <div class="skill-card">
+
+            <h3>💻 Web Development</h3>
+
+            <p>
+                HTML, CSS, JavaScript, PHP
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>🗄️ Database</h3>
+
+            <p>
+                MySQL and database-driven applications
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>⚡ Backend</h3>
+
+            <p>
+                PHP and beginner Flask development
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>🎨 UI / UX</h3>
+
+            <p>
+                Figma, wireframes, layouts, and basic UX principles
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>🌐 Networking</h3>
+
+            <p>
+                Basic networking and computer systems servicing
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>🛠️ Tools</h3>
+
+            <p>
+                Git, GitHub, XAMPP, FileZilla, VS Code
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="section-title">
+
+        <p class="section-label">Let's connect</p>
+
+        <h2>Contact</h2>
+
+        <p class="contact-intro">
+            Interested in working together or learning more about my work?
+            Feel free to reach out.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <div class="contact-card">
+
+            <h3>📧 Email</h3>
+
+            <a href="mailto:chrislynne.u@gmail.com">
+                chrislynne.u@gmail.com
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>💼 LinkedIn</h3>
+
+            <a
+                href="https://www.linkedin.com/in/urriza-chrislynne/"
+                target="_blank"
+            >
+                LinkedIn Profile
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>💻 GitHub</h3>
+
+            <a
+                href="https://github.com/itslynnieeee"
+                target="_blank"
+            >
+                GitHub Profile
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     IMAGE / PROJECT MODAL
+========================= -->
+
+<div class="project-modal" id="projectModal">
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeProjectModal()"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <div
+            class="modal-images"
+            id="modalImages"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        © 2026 Chrislynne Urriza. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    function openMenu() {
+
+        document.getElementById("sidebar").classList.add("open");
+
+        document.getElementById("overlay").classList.add("show");
+
+    }
+
+
+    function closeMenu() {
+
+        document.getElementById("sidebar").classList.remove("open");
+
+        document.getElementById("overlay").classList.remove("show");
+
+    }
+
+
+    /* =========================
+       PROJECT DATA
+    ========================= */
+
+    const projects = {
+
+        uplb: {
+
+            title: "UPLB Graduate School E-Forms System",
+
+            description:
+                "Selected screenshots from the web-based administrative system developed during my IT internship.",
+
+            images: [
+
+                "assets/uplb-dashboard.png"
+
+            ]
+
+        },
+
+
+        nouricare: {
+
+            title: "Nouricare",
+
+            description:
+                "A beauty and hygiene e-commerce system developed as an academic project.",
+
+            images: [
+
+                "assets/nouricare-1.png",
+                "assets/nouricare-2.png",
+                "assets/nouricare-3.png",
+                "assets/nouricare-4.png",
+                "assets/nouricare-5.png",
+                "assets/nouricare-6.png",
+                "assets/nouricare-7.png",
+                "assets/nouricare-8.png"
+
+            ]
+
+        },
+
+
+        freelance: {
+
+            title: "Freelance Booking App",
+
+            description:
+                "A UI/UX design concept focused on discovering, scheduling, and managing freelance services.",
+
+            images: [
+
+                "assets/freelance-1.PNG",
+                "assets/freelance-2.PNG",
+                "assets/freelance-3.PNG"
+
+            ]
+
+        },
+
+
+        snackstop: {
+
+            title: "SnackStop",
+
+            description:
+                "A UI/UX concept for a Filipino-focused food delivery application.",
+
+            images: [
+
+                "assets/snack-1.PNG",
+                "assets/snack-2.PNG"
+
+            ]
+
+        },
+
+
+        habitflow: {
+
+            title: "HabitFlow",
+
+            description:
+                "A mobile UI/UX concept designed to help users build and maintain daily habits.",
+
+            images: [
+
+                "assets/habit-1.PNG",
+                "assets/habit-2.PNG"
+
+            ]
+
+        },
+
+
+        biztrack: {
+
+            title: "BizTrack",
+
+            description:
+                "A dashboard UI concept for small business management and data visualization.",
+
+            images: [
+
+                "assets/biz-1.PNG",
+                "assets/biz-2.PNG",
+                "assets/biz-3.PNG",
+                "assets/biz-4.PNG",
+                "assets/biz-5.PNG",
+                "assets/biz-6.PNG"
+
+            ]
+
+        },
+
+
+        recipe: {
+
+            title: "Online Recipe",
+
+            description:
+                "A clean mobile UI/UX concept focused on recipe discovery and meal planning.",
+
+            images: [
+
+                "assets/rec-2.PNG",
+                "assets/rec-3.PNG",
+                "assets/rec-4.PNG",
+                "assets/rec-5.PNG"
+
+            ]
+
+        }
+
+    };
+
+
+    /* =========================
+       UPLB PROJECT VIEWER DATA
+    ========================= */
+
+    const uplbProjects = [
+
+        {
+            category: "PubMat Generator",
+
+            title: "PubMat Generator",
+
+            description:
+                "Developed and enhanced a web-based PubMat generation feature for creating examination-related promotional materials.",
+
+            images: [
+
+                "assets/uplb/pubmat-generator-1.png"
+
+            ]
+
+        },
+
+
+        {
+            category: "PubMat Designs",
+
+            title: "PubMat Designs",
+
+            description:
+                "Created and refined digital PubMat layouts used for university examination announcements.",
+
+            images: [
+
+                "assets/uplb/pubmat-1.png"
+
+            ]
+
+        },
+
+
+        {
+            category: "External Reviewer Form",
+
+            title: "External Reviewer Form",
+
+            description:
+                "Worked on forms used for external reviewer-related processes, including data input and workflow handling.",
+
+            images: [
+
+                "assets/uplb/external-reviewer-form-1.png"
+
+            ]
+
+        },
+
+
+        {
+            category: "Superadmin",
+
+            title: "Superadmin Module",
+
+            description:
+                "Worked on the Superadmin module for managing system-wide administrative functions and information.",
+
+            images: [
+
+                "assets/uplb/superadmin-1.png",
+                "assets/uplb/superadmin-2.png"
+            ]
+
+        },
+
+
+        {
+            category: "PubMat Admin",
+
+            title: "PubMat Admin",
+
+            description:
+                "Developed and maintained administrative features for managing PubMat-related information and generated materials.",
+
+            images: [
+
+                "assets/uplb/pubmat-admin-1.png",
+                "assets/uplb/pubmat-admin-2.png"
+
+            ]
+
+        },
+
+
+        {
+            category: "External Reviewer Admin",
+
+            title: "External Reviewer Admin",
+
+            description:
+                "Worked on administrative features for managing external reviewer information and related workflows.",
+
+            images: [
+
+                "assets/uplb/external-reviewer-admin-1.png"
+
+            ]
+
+        },
+
+
+        {
+            category: "External Review Report",
+
+            title: "External Review Report Form",
+
+            description:
+                "Developed and tested an external review report form to support the submission and management of reviewer reports.",
+
+            images: [
+
+                "assets/uplb/external-review-report-1.png",
+                "assets/uplb/external-review-report-2.png"
+
+            ]
+
+        }
+
+    ];
+
+
+    /* =========================
+       UPLB VIEWER STATE
+    ========================= */
+
+    let currentUplbProject = 0;
+
+    let currentUplbImage = 0;
+
+
+    /* =========================
+       UPDATE UPLB VIEWER
+    ========================= */
+
+    function updateUplbViewer() {
+
+        const project =
+            uplbProjects[currentUplbProject];
+
+        const image =
+            project.images[currentUplbImage];
+
+
+        const categoryElement =
+            document.getElementById("uplbCategory");
+
+        const titleElement =
+            document.getElementById("uplbTitle");
+
+        const descriptionElement =
+            document.getElementById("uplbDescription");
+
+        const imageElement =
+            document.getElementById("uplbImage");
+
+        const counterElement =
+            document.getElementById("uplbCounter");
+
+        const progressElement =
+            document.getElementById("uplbProgress");
+
+        const previousButton =
+            document.getElementById("uplbPrevious");
+
+        const nextButton =
+            document.getElementById("uplbNext");
+
+
+        /* Prevent errors if the UPLB viewer
+           is not currently on the page */
+
+        if (
+            !categoryElement ||
+            !titleElement ||
+            !descriptionElement ||
+            !imageElement
+        ) {
+
+            return;
+
+        }
+
+
+        categoryElement.textContent =
+            project.category;
+
+        titleElement.textContent =
+            project.title;
+
+        descriptionElement.textContent =
+            project.description;
+
+        imageElement.src =
+            image;
+
+        imageElement.alt =
+            project.title;
+
+
+        const projectNumber =
+            String(currentUplbProject + 1).padStart(2, "0");
+
+        const totalProjects =
+            String(uplbProjects.length).padStart(2, "0");
+
+
+        counterElement.textContent =
+            `${projectNumber} / ${totalProjects}`;
+
+        progressElement.textContent =
+            `${projectNumber} / ${totalProjects}`;
+
+
+        /* Disable Previous on first project */
+
+        if (previousButton) {
+
+            previousButton.disabled =
+                currentUplbProject === 0;
+
+        }
+
+
+        /* Disable Next on last project */
+
+        if (nextButton) {
+
+            nextButton.disabled =
+                currentUplbProject === uplbProjects.length - 1;
+
+        }
+
+    }
+
+
+    /* =========================
+       NEXT UPLB PROJECT
+    ========================= */
+
+    function nextUplbProject() {
+
+        if (
+            currentUplbProject <
+            uplbProjects.length - 1
+        ) {
+
+            currentUplbProject++;
+
+            currentUplbImage = 0;
+
+            updateUplbViewer();
+
+        }
+
+    }
+
+
+    /* =========================
+       PREVIOUS UPLB PROJECT
+    ========================= */
+
+    function previousUplbProject() {
+
+        if (
+            currentUplbProject > 0
+        ) {
+
+            currentUplbProject--;
+
+            currentUplbImage = 0;
+
+            updateUplbViewer();
+
+        }
+
+    }
+
+
+    /* =========================
+       NEXT UPLB IMAGE
+    ========================= */
+
+    function nextUplbImage() {
+
+        const project =
+            uplbProjects[currentUplbProject];
+
+
+        if (
+            currentUplbImage <
+            project.images.length - 1
+        ) {
+
+            currentUplbImage++;
+
+            document.getElementById("uplbImage").src =
+                project.images[currentUplbImage];
+
+        }
+
+    }
+
+
+    /* =========================
+       PREVIOUS UPLB IMAGE
+    ========================= */
+
+    function previousUplbImage() {
+
+        if (
+            currentUplbImage > 0
+        ) {
+
+            currentUplbImage--;
+
+            const project =
+                uplbProjects[currentUplbProject];
+
+
+            document.getElementById("uplbImage").src =
+                project.images[currentUplbImage];
+
+        }
+
+    }
+
+    /* =========================
+   UPLB FULL IMAGE VIEWER
+========================= */
+
+function openUplbImageViewer() {
+    const project = uplbProjects[currentUplbProject];
+    const imageSrc = project.images[currentUplbImage];
+
+    // Remove existing viewer if any
+    const existing = document.querySelector(".uplb-image-viewer");
+    if (existing) existing.remove();
+
+    const viewer = document.createElement("div");
+    viewer.className = "uplb-image-viewer";
+    viewer.id = "uplbImageViewer";
+
+    viewer.innerHTML = `
+        <button class="uplb-viewer-close" onclick="closeUplbImageViewer()" aria-label="Close">
+            ×
+        </button>
+
+        <button class="uplb-viewer-prev" onclick="previousUplbFullImage()" aria-label="Previous">
+            ‹
+        </button>
+
+        <div class="uplb-full-image-container">
+            <img src="${imageSrc}" alt="${project.title}">
+            <div class="uplb-full-caption">
+                <span id="uplbFullCounter">${String(currentUplbImage + 1).padStart(2, "0")} / ${String(project.images.length).padStart(2, "0")}</span>
+                <span>•</span>
+                <span>${project.title}</span>
+            </div>
+        </div>
+
+        <button class="uplb-viewer-next" onclick="nextUplbFullImage()" aria-label="Next">
+            ›
+        </button>
+    `;
+
+    document.body.appendChild(viewer);
+    document.body.classList.add("modal-open");
+
+    // Close when clicking the dark background
+    viewer.addEventListener("click", function (e) {
+        if (e.target === viewer) {
+            closeUplbImageViewer();
+        }
+    });
+}
+
+function closeUplbImageViewer() {
+    const viewer = document.getElementById("uplbImageViewer");
+    if (viewer) {
+        viewer.remove();
+    }
+    document.body.classList.remove("modal-open");
+}
+
+function nextUplbFullImage() {
+    const project = uplbProjects[currentUplbProject];
+
+    if (currentUplbImage < project.images.length - 1) {
+        currentUplbImage++;
+    } else {
+        // Optional: go to next project if last image
+        // currentUplbImage = 0;
+        // if (currentUplbProject < uplbProjects.length - 1) currentUplbProject++;
+        return;
+    }
+
+    updateUplbFullViewer();
+    updateUplbViewer(); // sync the main viewer also
+}
+
+function previousUplbFullImage() {
+    if (currentUplbImage > 0) {
+        currentUplbImage--;
+    } else {
+        return;
+    }
+
+    updateUplbFullViewer();
+    updateUplbViewer(); // sync the main viewer also
+}
+
+function updateUplbFullViewer() {
+    const project = uplbProjects[currentUplbProject];
+    const viewer = document.getElementById("uplbImageViewer");
+    if (!viewer) return;
+
+    const img = viewer.querySelector(".uplb-full-image-container img");
+    const counter = document.getElementById("uplbFullCounter");
+
+    if (img) {
+        img.src = project.images[currentUplbImage];
+        img.alt = project.title;
+    }
+
+    if (counter) {
+        counter.textContent =
+            `${String(currentUplbImage + 1).padStart(2, "0")} / ${String(project.images.length).padStart(2, "0")}`;
+    }
+}
+
+
+    /* =========================
+       OPEN PROJECT MODAL
+    ========================= */
+
+    function openProjectModal(projectName) {
+
+        const project =
+            projects[projectName];
+
+
+        document.getElementById("modalTitle").textContent =
+            project.title;
+
+
+        document.getElementById("modalDescription").textContent =
+            project.description;
+
+
+        const imageContainer =
+            document.getElementById("modalImages");
+
+
+        imageContainer.innerHTML = "";
+
+
+        project.images.forEach(function(image) {
+
+            const img =
+                document.createElement("img");
+
+
+            img.src =
+                image;
+
+
+            img.alt =
+                project.title;
+
+
+            img.onclick = function() {
+
+                openImageViewer(image);
+
+            };
+
+
+            imageContainer.appendChild(img);
+
+        });
+
+
+        document
+            .getElementById("projectModal")
+            .classList.add("show");
+
+
+        document.body.classList.add("modal-open");
+
+    }
+
+
+    /* =========================
+       CLOSE PROJECT MODAL
+    ========================= */
+
+    function closeProjectModal() {
+
+        document
+            .getElementById("projectModal")
+            .classList.remove("show");
+
+
+        document.body.classList.remove("modal-open");
+
+    }
+
+
+    /* =========================
+       IMAGE VIEWER
+    ========================= */
+
+    function openImageViewer(imageSrc) {
+
+        const viewer =
+            document.createElement("div");
+
+
+        viewer.className =
+            "image-viewer";
+
+
+        viewer.innerHTML = `
+
+            <button
+                class="viewer-close"
+                onclick="this.parentElement.remove()"
+            >
+                ×
+            </button>
+
+            <img
+                src="${imageSrc}"
+                alt="Project screenshot"
+            >
+
+        `;
+
+
+        document.body.appendChild(viewer);
+
+    }
+
+
+    /* =========================
+       CLOSE MODAL WITH ESC
+    ========================= */
+
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeProjectModal();
+        closeMenu();
+        closeUplbImageViewer();
+    }
+
+    // Arrow keys only work when UPLB full viewer is open
+    if (document.getElementById("uplbImageViewer")) {
+        if (event.key === "ArrowRight") {
+            nextUplbFullImage();
+        }
+        if (event.key === "ArrowLeft") {
+            previousUplbFullImage();
+        }
+    }
+});
+
+
+    /* =========================
+       ACTIVE NAVIGATION
+    ========================= */
+
+    const sections =
+        document.querySelectorAll("section[id]");
+
+
+    const navLinks =
+        document.querySelectorAll(".nav-links a");
+
+
+    window.addEventListener("scroll", function() {
+
+        let current = "";
+
+
+        sections.forEach(function(section) {
+
+            const sectionTop =
+                section.offsetTop - 150;
+
+
+            if (
+                window.scrollY >= sectionTop
+            ) {
+
+                current =
+                    section.getAttribute("id");
+
+            }
+
+        });
+
+
+        navLinks.forEach(function(link) {
+
+            link.classList.remove("active");
+
+
+            if (
+                link.getAttribute("href") ===
+                "#" + current
+            ) {
+
+                link.classList.add("active");
+
+            }
+
+        });
+
+    });
+
+
+    /* =========================
+       CUSTOM SMOOTH SCROLL
+    ========================= */
+
+    function customSmoothScroll(targetId) {
+
+        const target =
+            document.querySelector(targetId);
+
+
+        if (!target) return;
+
+
+        const navHeight =
+            document.querySelector(".navbar")?.offsetHeight || 80;
+
+
+        const extra = 12;
+
+
+        const startPosition =
+            window.pageYOffset;
+
+
+        const targetPosition =
+            target.getBoundingClientRect().top +
+            startPosition -
+            navHeight -
+            extra;
+
+
+        const distance =
+            targetPosition -
+            startPosition;
+
+
+        const duration = 800;
+
+
+        let startTime = null;
+
+
+        function animation(currentTime) {
+
+            if (startTime === null) {
+
+                startTime =
+                    currentTime;
+
+            }
+
+
+            const timeElapsed =
+                currentTime -
+                startTime;
+
+
+            const progress =
+                Math.min(
+                    timeElapsed / duration,
+                    1
+                );
+
+
+            /* Ease in-out function */
+
+            const ease =
+                progress < 0.5
+
+                    ? 2 * progress * progress
+
+                    : 1 -
+                      Math.pow(
+                          -2 * progress + 2,
+                          2
+                      ) / 2;
+
+
+            window.scrollTo(
+                0,
+                startPosition +
+                distance * ease
+            );
+
+
+            if (
+                timeElapsed <
+                duration
+            ) {
+
+                requestAnimationFrame(
+                    animation
+                );
+
+            }
+
+        }
+
+
+        requestAnimationFrame(
+            animation
+        );
+
+    }
+
+
+    /* =========================
+       CATCH ALL # LINKS
+    ========================= */
+
+    document.addEventListener(
+        "click",
+        function(e) {
+
+            const link =
+                e.target.closest(
+                    'a[href^="#"]'
+                );
+
+
+            if (!link) return;
+
+
+            const href =
+                link.getAttribute("href");
+
+
+            if (
+                !href ||
+                href === "#"
+            ) {
+
+                return;
+
+            }
+
+
+            e.preventDefault();
+
+            e.stopPropagation();
+
+
+            const isMobileMenu =
+                link.closest(".sidebar");
+
+
+            if (isMobileMenu) {
+
+                closeMenu();
+
+
+                setTimeout(
+                    function() {
+
+                        customSmoothScroll(
+                            href
+                        );
+
+                    },
+                    320
+                );
+
+            } else {
+
+                customSmoothScroll(
+                    href
+                );
+
+            }
+
+        }
+    );
+
+
+    /* =========================
+       INITIALIZE UPLB VIEWER
+    ========================= */
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        function() {
+
+            updateUplbViewer();
+
+        }
+    );
+
+</script>
+
+</body>
+</html>
